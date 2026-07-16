@@ -13,13 +13,15 @@ jobs:
       - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5
         with:
           python-version: "3.12"
-      - name: Take snapshot
-        run: python3 scripts/snapshot.py
-      - name: Commit if changed
+      - name: Snapshot into telemetry-data branch
         run: |
+          git fetch origin telemetry-data:telemetry-data || git branch telemetry-data "$(git commit-tree "$(git hash-object -t tree /dev/null)" -m 'init telemetry-data (empty root)')"
+          git worktree add ../tdata telemetry-data
+          python3 scripts/snapshot.py --outdir ../tdata
+          cd ../tdata
           git config user.name "szl-telemetry-bot"
           git config user.email "szl-telemetry-bot@users.noreply.github.com"
-          git add -A data README.md
+          git add -A
           if git diff --cached --quiet; then echo "no change"; exit 0; fi
           git commit -s -m "telemetry: daily snapshot $(date -u +%F)"
-          git push
+          git push origin telemetry-data

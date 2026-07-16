@@ -8,13 +8,16 @@ Honest scope (do not overclaim):
 - Day-over-day deltas are DERIVED from consecutive snapshots, not measured.
 - No uniqueness, user-count, or quality claims. v1 does NOT track discussions,
   clones, or Spaces runtime usage.
-Stdlib only. Deterministic file layout: data/daily/YYYY-MM-DD.json (overwritten
-if re-run same day), data/downloads.csv (regenerated from all dailies).
+Stdlib only. Writes into --outdir (the telemetry-data branch worktree in CI):
+data/daily/YYYY-MM-DD.json (overwritten if re-run same day), data/downloads.csv
+(regenerated from all dailies), TRENDS.md (flagship momentum table).
 """
-import csv, datetime, json, pathlib, urllib.request
+import argparse, csv, datetime, json, pathlib, urllib.request
 
 ORG = "SZLHOLDINGS"
-ROOT = pathlib.Path(__file__).resolve().parent.parent
+_ap = argparse.ArgumentParser()
+_ap.add_argument("--outdir", default=str(pathlib.Path(__file__).resolve().parent.parent))
+ROOT = pathlib.Path(_ap.parse_args().outdir).resolve()
 FLAGSHIPS = [
     "SZLHOLDINGS/SZL-Khipu-1.5B-BrainNavigator",
     "SZLHOLDINGS/SZL-Forge-1.5B-ReceiptAgent",
@@ -40,6 +43,7 @@ def main() -> None:
                 "downloads": it.get("downloads"), "likes": it.get("likes", 0),
             })
     rows.sort(key=lambda r: (r["type"], r["repo"]))
+    (ROOT / "data" / "daily").mkdir(parents=True, exist_ok=True)
     daily = ROOT / "data" / "daily" / f"{today}.json"
     daily.write_text(json.dumps({"sampledAtUtcDate": today, "rows": rows}, indent=1) + "\n")
 
@@ -67,11 +71,10 @@ def main() -> None:
     lines.append("")
     lines.append(f"_Last snapshot: {dates[-1]} UTC · counters are HF-reported cumulative"
                  " downloads; deltas DERIVED from consecutive daily snapshots._")
-    readme = ROOT / "README.md"
-    txt = readme.read_text()
-    start, end = "<!-- TREND:START -->", "<!-- TREND:END -->"
-    pre, _, rest = txt.partition(start); _, _, post = rest.partition(end)
-    readme.write_text(pre + start + "\n" + "\n".join(lines) + "\n" + end + post)
+    (ROOT / "TRENDS.md").write_text(
+        "# Flagship momentum\n\nBot-written daily by `scripts/snapshot.py` (main). "
+        "Counters are HF-reported cumulative downloads; deltas DERIVED from consecutive "
+        "daily snapshots; no uniqueness or adoption claims.\n\n" + "\n".join(lines) + "\n")
     print(f"snapshot {today}: {len(rows)} repos")
 
 if __name__ == "__main__":
