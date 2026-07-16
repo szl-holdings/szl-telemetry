@@ -2,9 +2,9 @@
 """Daily telemetry snapshot for the SZLHOLDINGS Hugging Face estate.
 
 Honest scope (do not overclaim):
-- Samples Hugging Face PUBLIC API cumulative counters once per run: downloads
-  (models, datasets; HF's own counting semantics) and likes (models, datasets,
-  spaces). Point-in-time, UTC-stamped.
+- Samples Hugging Face PUBLIC API counters once per run: downloads_30d (the
+  API's `downloads` field is a 30-DAY WINDOW, not cumulative), downloads_all_time
+  (`downloadsAllTime`), and likes. Point-in-time, UTC-stamped.
 - Day-over-day deltas are DERIVED from consecutive snapshots, not measured.
 - No uniqueness, user-count, or quality claims. v1 does NOT track discussions,
   clones, or Spaces runtime usage.
@@ -34,13 +34,15 @@ def fetch(kind: str, expands: list[str]) -> list[dict]:
 def main() -> None:
     today = datetime.datetime.now(datetime.timezone.utc).date().isoformat()
     rows = []
-    for kind, expands in (("models", ["downloads", "likes"]),
-                          ("datasets", ["downloads", "likes"]),
+    for kind, expands in (("models", ["downloads", "downloadsAllTime", "likes"]),
+                          ("datasets", ["downloads", "downloadsAllTime", "likes"]),
                           ("spaces", ["likes"])):
         for it in fetch(kind, expands):
             rows.append({
                 "date": today, "type": kind[:-1], "repo": it["id"],
-                "downloads": it.get("downloads"), "likes": it.get("likes", 0),
+                "downloads_30d": it.get("downloads"),
+                "downloads_all_time": it.get("downloadsAllTime"),
+                "likes": it.get("likes", 0),
             })
     rows.sort(key=lambda r: (r["type"], r["repo"]))
     (ROOT / "data" / "daily").mkdir(parents=True, exist_ok=True)
@@ -51,7 +53,7 @@ def main() -> None:
     for p in sorted((ROOT / "data" / "daily").glob("*.json")):
         all_rows.extend(json.loads(p.read_text())["rows"])
     with (ROOT / "data" / "downloads.csv").open("w", newline="") as f:
-        w = csv.DictWriter(f, fieldnames=["date", "type", "repo", "downloads", "likes"])
+        w = csv.DictWriter(f, fieldnames=["date", "type", "repo", "downloads_30d", "downloads_all_time", "likes"])
         w.writeheader(); w.writerows(all_rows)
 
     # README trend block: baseline + deltas vs 1/7/14 days ago where history exists.
@@ -60,20 +62,21 @@ def main() -> None:
     def cell(repo, back):
         if len(dates) <= back: return "—"
         cur, ref = by_repo_date.get((repo, dates[-1])), by_repo_date.get((repo, dates[-1 - back]))
-        if not cur or not ref or cur["downloads"] is None or ref["downloads"] is None: return "—"
-        d = cur["downloads"] - ref["downloads"]
+        if not cur or not ref or cur["downloads_all_time"] is None or ref["downloads_all_time"] is None: return "—"
+        d = cur["downloads_all_time"] - ref["downloads_all_time"]
         return f"{d:+d}"
-    lines = ["| repo | downloads (cum.) | Δ1d | Δ7d | Δ14d |", "|---|---|---|---|---|"]
+    lines = ["| repo | downloads (all-time) | Δ1d | Δ7d | Δ14d |", "|---|---|---|---|---|"]
     for repo in FLAGSHIPS:
         cur = by_repo_date.get((repo, dates[-1]), {})
         lines.append(f"| [{repo.split('/')[1]}](https://huggingface.co/{repo}) | "
-                     f"{cur.get('downloads', '—')} | {cell(repo,1)} | {cell(repo,7)} | {cell(repo,14)} |")
+                     f"{cur.get('downloads_all_time', '—')} | {cell(repo,1)} | {cell(repo,7)} | {cell(repo,14)} |")
     lines.append("")
     lines.append(f"_Last snapshot: {dates[-1]} UTC · counters are HF-reported cumulative"
                  " downloads; deltas DERIVED from consecutive daily snapshots._")
     (ROOT / "TRENDS.md").write_text(
         "# Flagship momentum\n\nBot-written daily by `scripts/snapshot.py` (main). "
-        "Counters are HF-reported cumulative downloads; deltas DERIVED from consecutive "
+        "Counters are HF-reported ALL-TIME downloads (the API also exposes a 30-day "
+        "window, recorded in the CSV as downloads_30d); deltas DERIVED from consecutive "
         "daily snapshots; no uniqueness or adoption claims.\n\n" + "\n".join(lines) + "\n")
     print(f"snapshot {today}: {len(rows)} repos")
 

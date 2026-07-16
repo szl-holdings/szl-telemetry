@@ -6,9 +6,10 @@ survive the launch spike?**
 
 ## What this measures (and what it does not)
 
-- **Measured:** Hugging Face public-API cumulative counters, sampled once per
-  UTC day — `downloads` (models, datasets; HF's counting semantics apply) and
-  `likes` (models, datasets, spaces). Point-in-time samples.
+- **Measured:** Hugging Face public-API counters, sampled once per UTC day —
+  `downloads_30d` (the API's `downloads` field is a **30-day window**, not
+  cumulative), `downloads_all_time` (`downloadsAllTime`), and `likes` (models,
+  datasets, spaces). Point-in-time samples; HF's counting semantics apply.
 - **DERIVED:** day-over-day deltas computed from consecutive snapshots. A delta
   is only as good as the two samples around it.
 - **Not claimed:** unique users, install base, quality, or adoption. Not
