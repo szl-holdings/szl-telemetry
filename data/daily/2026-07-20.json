@@ -1,0 +1,517 @@
+{
+ "sampledAtUtcDate": "2026-07-20",
+ "rows": [
+  {
+   "date": "2026-07-20",
+   "type": "dataset",
+   "repo": "SZLHOLDINGS/SZLHOLDINGS",
+   "downloads_30d": 96,
+   "downloads_all_time": 249,
+   "likes": 0
+  },
+  {
+   "date": "2026-07-20",
+   "type": "dataset",
+   "repo": "SZLHOLDINGS/a11oy-verifiable-corpus",
+   "downloads_30d": 2003,
+   "downloads_all_time": 2282,
+   "likes": 0
+  },
+  {
+   "date": "2026-07-20",
+   "type": "dataset",
+   "repo": "SZLHOLDINGS/alloy-sovereign-eval-runs",
+   "downloads_30d": 71,
+   "downloads_all_time": 71,
+   "likes": 0
+  },
+  {
+   "date": "2026-07-20",
+   "type": "dataset",
+   "repo": "SZLHOLDINGS/canonical-formulas-v1",
+   "downloads_30d": 108,
+   "downloads_all_time": 499,
+   "likes": 0
+  },
+  {
+   "date": "2026-07-20",
+   "type": "dataset",
+   "repo": "SZLHOLDINGS/doctrine-v10-v11",
+   "downloads_30d": 124,
+   "downloads_all_time": 515,
+   "likes": 0
+  },
+  {
+   "date": "2026-07-20",
+   "type": "dataset",
+   "repo": "SZLHOLDINGS/energy-attested-runs",
+   "downloads_30d": 121,
+   "downloads_all_time": 121,
+   "likes": 0
+  },
+  {
+   "date": "2026-07-20",
+   "type": "dataset",
+   "repo": "SZLHOLDINGS/governed-receipts-bench",
+   "downloads_30d": 108,
+   "downloads_all_time": 108,
+   "likes": 0
+  },
+  {
+   "date": "2026-07-20",
+   "type": "dataset",
+   "repo": "SZLHOLDINGS/k-verify-benchmark-v1",
+   "downloads_30d": 110,
+   "downloads_all_time": 188,
+   "likes": 0
+  },
+  {
+   "date": "2026-07-20",
+   "type": "dataset",
+   "repo": "SZLHOLDINGS/killinchu-osint-corpus",
+   "downloads_30d": 16698,
+   "downloads_all_time": 24737,
+   "likes": 3
+  },
+  {
+   "date": "2026-07-20",
+   "type": "dataset",
+   "repo": "SZLHOLDINGS/lean-proofs-v1",
+   "downloads_30d": 192,
+   "downloads_all_time": 676,
+   "likes": 0
+  },
+  {
+   "date": "2026-07-20",
+   "type": "dataset",
+   "repo": "SZLHOLDINGS/lean-theorem-tree",
+   "downloads_30d": 134,
+   "downloads_all_time": 238,
+   "likes": 0
+  },
+  {
+   "date": "2026-07-20",
+   "type": "dataset",
+   "repo": "SZLHOLDINGS/ouroboros-arxiv-preprint",
+   "downloads_30d": 149,
+   "downloads_all_time": 277,
+   "likes": 0
+  },
+  {
+   "date": "2026-07-20",
+   "type": "dataset",
+   "repo": "SZLHOLDINGS/rag-corpus-v1",
+   "downloads_30d": 194,
+   "downloads_all_time": 302,
+   "likes": 0
+  },
+  {
+   "date": "2026-07-20",
+   "type": "dataset",
+   "repo": "SZLHOLDINGS/readiness-runs",
+   "downloads_30d": 202,
+   "downloads_all_time": 1285,
+   "likes": 0
+  },
+  {
+   "date": "2026-07-20",
+   "type": "dataset",
+   "repo": "SZLHOLDINGS/szl-1-doctrine-sft",
+   "downloads_30d": 54,
+   "downloads_all_time": 54,
+   "likes": 0
+  },
+  {
+   "date": "2026-07-20",
+   "type": "dataset",
+   "repo": "SZLHOLDINGS/szl-artifacts",
+   "downloads_30d": 293,
+   "downloads_all_time": 503,
+   "likes": 0
+  },
+  {
+   "date": "2026-07-20",
+   "type": "dataset",
+   "repo": "SZLHOLDINGS/szl-lake",
+   "downloads_30d": 1178,
+   "downloads_all_time": 1459,
+   "likes": 0
+  },
+  {
+   "date": "2026-07-20",
+   "type": "dataset",
+   "repo": "SZLHOLDINGS/szl-second-brain-inrepo",
+   "downloads_30d": 80,
+   "downloads_all_time": 80,
+   "likes": 0
+  },
+  {
+   "date": "2026-07-20",
+   "type": "dataset",
+   "repo": "SZLHOLDINGS/thesis-corpus-v18",
+   "downloads_30d": 170,
+   "downloads_all_time": 610,
+   "likes": 0
+  },
+  {
+   "date": "2026-07-20",
+   "type": "dataset",
+   "repo": "SZLHOLDINGS/thesis-v18-formal-verification",
+   "downloads_30d": 139,
+   "downloads_all_time": 560,
+   "likes": 0
+  },
+  {
+   "date": "2026-07-20",
+   "type": "dataset",
+   "repo": "SZLHOLDINGS/uds-bundles-v1",
+   "downloads_30d": 136,
+   "downloads_all_time": 295,
+   "likes": 0
+  },
+  {
+   "date": "2026-07-20",
+   "type": "dataset",
+   "repo": "SZLHOLDINGS/uds-governance-receipts",
+   "downloads_30d": 438,
+   "downloads_all_time": 599,
+   "likes": 0
+  },
+  {
+   "date": "2026-07-20",
+   "type": "dataset",
+   "repo": "SZLHOLDINGS/uds-spans-receipts",
+   "downloads_30d": 255,
+   "downloads_all_time": 474,
+   "likes": 0
+  },
+  {
+   "date": "2026-07-20",
+   "type": "dataset",
+   "repo": "SZLHOLDINGS/why-we-lead",
+   "downloads_30d": 151,
+   "downloads_all_time": 284,
+   "likes": 0
+  },
+  {
+   "date": "2026-07-20",
+   "type": "model",
+   "repo": "SZLHOLDINGS/SZL-Forge-1.5B-ReceiptAgent",
+   "downloads_30d": 2026,
+   "downloads_all_time": 2026,
+   "likes": 0
+  },
+  {
+   "date": "2026-07-20",
+   "type": "model",
+   "repo": "SZLHOLDINGS/SZL-Khipu-1.5B",
+   "downloads_30d": 1391,
+   "downloads_all_time": 1391,
+   "likes": 1
+  },
+  {
+   "date": "2026-07-20",
+   "type": "model",
+   "repo": "SZLHOLDINGS/SZL-Khipu-1.5B-GGUF",
+   "downloads_30d": 656,
+   "downloads_all_time": 656,
+   "likes": 0
+  },
+  {
+   "date": "2026-07-20",
+   "type": "model",
+   "repo": "SZLHOLDINGS/a11oy-v19-substrate",
+   "downloads_30d": 0,
+   "downloads_all_time": 0,
+   "likes": 0
+  },
+  {
+   "date": "2026-07-20",
+   "type": "model",
+   "repo": "SZLHOLDINGS/governed-inference-meter",
+   "downloads_30d": 0,
+   "downloads_all_time": 0,
+   "likes": 0
+  },
+  {
+   "date": "2026-07-20",
+   "type": "model",
+   "repo": "SZLHOLDINGS/szl-blocked",
+   "downloads_30d": 0,
+   "downloads_all_time": 0,
+   "likes": 1
+  },
+  {
+   "date": "2026-07-20",
+   "type": "model",
+   "repo": "SZLHOLDINGS/szl-formulas",
+   "downloads_30d": 0,
+   "downloads_all_time": 0,
+   "likes": 0
+  },
+  {
+   "date": "2026-07-20",
+   "type": "model",
+   "repo": "SZLHOLDINGS/szl-governed-norm",
+   "downloads_30d": 56,
+   "downloads_all_time": 56,
+   "likes": 1
+  },
+  {
+   "date": "2026-07-20",
+   "type": "model",
+   "repo": "SZLHOLDINGS/szl-govsign",
+   "downloads_30d": 0,
+   "downloads_all_time": 0,
+   "likes": 0
+  },
+  {
+   "date": "2026-07-20",
+   "type": "model",
+   "repo": "SZLHOLDINGS/szl-invariants",
+   "downloads_30d": 0,
+   "downloads_all_time": 0,
+   "likes": 0
+  },
+  {
+   "date": "2026-07-20",
+   "type": "model",
+   "repo": "SZLHOLDINGS/szl-kernels",
+   "downloads_30d": 50,
+   "downloads_all_time": 50,
+   "likes": 0
+  },
+  {
+   "date": "2026-07-20",
+   "type": "model",
+   "repo": "SZLHOLDINGS/szl-lambda-gate",
+   "downloads_30d": 51,
+   "downloads_all_time": 51,
+   "likes": 0
+  },
+  {
+   "date": "2026-07-20",
+   "type": "model",
+   "repo": "SZLHOLDINGS/szl-nemo",
+   "downloads_30d": 5,
+   "downloads_all_time": 5,
+   "likes": 0
+  },
+  {
+   "date": "2026-07-20",
+   "type": "model",
+   "repo": "SZLHOLDINGS/szl-ouroboros",
+   "downloads_30d": 0,
+   "downloads_all_time": 0,
+   "likes": 0
+  },
+  {
+   "date": "2026-07-20",
+   "type": "model",
+   "repo": "SZLHOLDINGS/szl-provctl",
+   "downloads_30d": 0,
+   "downloads_all_time": 0,
+   "likes": 0
+  },
+  {
+   "date": "2026-07-20",
+   "type": "space",
+   "repo": "SZLHOLDINGS/a11oy",
+   "downloads_30d": null,
+   "downloads_all_time": null,
+   "likes": 0
+  },
+  {
+   "date": "2026-07-20",
+   "type": "space",
+   "repo": "SZLHOLDINGS/anatomy",
+   "downloads_30d": null,
+   "downloads_all_time": null,
+   "likes": 0
+  },
+  {
+   "date": "2026-07-20",
+   "type": "space",
+   "repo": "SZLHOLDINGS/cosmos",
+   "downloads_30d": null,
+   "downloads_all_time": null,
+   "likes": 0
+  },
+  {
+   "date": "2026-07-20",
+   "type": "space",
+   "repo": "SZLHOLDINGS/david-leads",
+   "downloads_30d": null,
+   "downloads_all_time": null,
+   "likes": 0
+  },
+  {
+   "date": "2026-07-20",
+   "type": "space",
+   "repo": "SZLHOLDINGS/energy-attest-holo",
+   "downloads_30d": null,
+   "downloads_all_time": null,
+   "likes": 0
+  },
+  {
+   "date": "2026-07-20",
+   "type": "space",
+   "repo": "SZLHOLDINGS/energy-attested-runs",
+   "downloads_30d": null,
+   "downloads_all_time": null,
+   "likes": 0
+  },
+  {
+   "date": "2026-07-20",
+   "type": "space",
+   "repo": "SZLHOLDINGS/governed-norm-holo",
+   "downloads_30d": null,
+   "downloads_all_time": null,
+   "likes": 0
+  },
+  {
+   "date": "2026-07-20",
+   "type": "space",
+   "repo": "SZLHOLDINGS/governed-receipt-verifier",
+   "downloads_30d": null,
+   "downloads_all_time": null,
+   "likes": 0
+  },
+  {
+   "date": "2026-07-20",
+   "type": "space",
+   "repo": "SZLHOLDINGS/guardrail-receipt",
+   "downloads_30d": null,
+   "downloads_all_time": null,
+   "likes": 0
+  },
+  {
+   "date": "2026-07-20",
+   "type": "space",
+   "repo": "SZLHOLDINGS/hatun-mcp",
+   "downloads_30d": null,
+   "downloads_all_time": null,
+   "likes": 0
+  },
+  {
+   "date": "2026-07-20",
+   "type": "space",
+   "repo": "SZLHOLDINGS/holographic",
+   "downloads_30d": null,
+   "downloads_all_time": null,
+   "likes": 0
+  },
+  {
+   "date": "2026-07-20",
+   "type": "space",
+   "repo": "SZLHOLDINGS/immune",
+   "downloads_30d": null,
+   "downloads_all_time": null,
+   "likes": 0
+  },
+  {
+   "date": "2026-07-20",
+   "type": "space",
+   "repo": "SZLHOLDINGS/killinchu",
+   "downloads_30d": null,
+   "downloads_all_time": null,
+   "likes": 2
+  },
+  {
+   "date": "2026-07-20",
+   "type": "space",
+   "repo": "SZLHOLDINGS/lambda-gate-holo",
+   "downloads_30d": null,
+   "downloads_all_time": null,
+   "likes": 0
+  },
+  {
+   "date": "2026-07-20",
+   "type": "space",
+   "repo": "SZLHOLDINGS/llm-router-live",
+   "downloads_30d": null,
+   "downloads_all_time": null,
+   "likes": 0
+  },
+  {
+   "date": "2026-07-20",
+   "type": "space",
+   "repo": "SZLHOLDINGS/receipt-chain-live",
+   "downloads_30d": null,
+   "downloads_all_time": null,
+   "likes": 0
+  },
+  {
+   "date": "2026-07-20",
+   "type": "space",
+   "repo": "SZLHOLDINGS/sda",
+   "downloads_30d": null,
+   "downloads_all_time": null,
+   "likes": 0
+  },
+  {
+   "date": "2026-07-20",
+   "type": "space",
+   "repo": "SZLHOLDINGS/szl-blocked-live",
+   "downloads_30d": null,
+   "downloads_all_time": null,
+   "likes": 0
+  },
+  {
+   "date": "2026-07-20",
+   "type": "space",
+   "repo": "SZLHOLDINGS/szl-estate-live",
+   "downloads_30d": null,
+   "downloads_all_time": null,
+   "likes": 0
+  },
+  {
+   "date": "2026-07-20",
+   "type": "space",
+   "repo": "SZLHOLDINGS/szl-forge-lab",
+   "downloads_30d": null,
+   "downloads_all_time": null,
+   "likes": 0
+  },
+  {
+   "date": "2026-07-20",
+   "type": "space",
+   "repo": "SZLHOLDINGS/szl-govsign-live",
+   "downloads_30d": null,
+   "downloads_all_time": null,
+   "likes": 0
+  },
+  {
+   "date": "2026-07-20",
+   "type": "space",
+   "repo": "SZLHOLDINGS/szl-kernels-live",
+   "downloads_30d": null,
+   "downloads_all_time": null,
+   "likes": 0
+  },
+  {
+   "date": "2026-07-20",
+   "type": "space",
+   "repo": "SZLHOLDINGS/szl-model-inference-lab",
+   "downloads_30d": null,
+   "downloads_all_time": null,
+   "likes": 0
+  },
+  {
+   "date": "2026-07-20",
+   "type": "space",
+   "repo": "SZLHOLDINGS/szl-provctl-live",
+   "downloads_30d": null,
+   "downloads_all_time": null,
+   "likes": 0
+  },
+  {
+   "date": "2026-07-20",
+   "type": "space",
+   "repo": "SZLHOLDINGS/yarqa",
+   "downloads_30d": null,
+   "downloads_all_time": null,
+   "likes": 0
+  }
+ ]
+}
