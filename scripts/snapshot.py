@@ -19,7 +19,7 @@ _ap = argparse.ArgumentParser()
 _ap.add_argument("--outdir", default=str(pathlib.Path(__file__).resolve().parent.parent))
 ROOT = pathlib.Path(_ap.parse_args().outdir).resolve()
 FLAGSHIPS = [
-    "SZLHOLDINGS/SZL-Khipu-1.5B-BrainNavigator",
+    "SZLHOLDINGS/SZL-Khipu-1.5B",
     "SZLHOLDINGS/SZL-Forge-1.5B-ReceiptAgent",
     "SZLHOLDINGS/SZL-Khipu-1.5B-GGUF",
 ]
