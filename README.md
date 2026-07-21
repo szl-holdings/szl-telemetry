@@ -21,7 +21,7 @@ survive the launch spike?**
 <!-- TREND:START -->
 | repo | downloads (cum.) | Δ1d | Δ7d | Δ14d |
 |---|---|---|---|---|
-| [SZL-Khipu-1.5B-BrainNavigator](https://huggingface.co/SZLHOLDINGS/SZL-Khipu-1.5B-BrainNavigator) | 1033 | — | — | — |
+| [SZL-Khipu-1.5B](https://huggingface.co/SZLHOLDINGS/SZL-Khipu-1.5B) | 1033 | — | — | — |
 | [SZL-Forge-1.5B-ReceiptAgent](https://huggingface.co/SZLHOLDINGS/SZL-Forge-1.5B-ReceiptAgent) | 780 | — | — | — |
 | [SZL-Khipu-1.5B-GGUF](https://huggingface.co/SZLHOLDINGS/SZL-Khipu-1.5B-GGUF) | 189 | — | — | — |
 
