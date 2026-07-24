@@ -4,8 +4,8 @@ Bot-written daily by `scripts/snapshot.py` (main). Counters are HF-reported ALL-
 
 | repo | downloads (all-time) | Δ1d | Δ7d | Δ14d |
 |---|---|---|---|---|
-| [SZL-Khipu-1.5B](https://huggingface.co/SZLHOLDINGS/SZL-Khipu-1.5B) | 1556 | +163 | — | — |
-| [SZL-Forge-1.5B-ReceiptAgent](https://huggingface.co/SZLHOLDINGS/SZL-Forge-1.5B-ReceiptAgent) | 2197 | +170 | +1417 | — |
-| [SZL-Khipu-1.5B-GGUF](https://huggingface.co/SZLHOLDINGS/SZL-Khipu-1.5B-GGUF) | 857 | +189 | +668 | — |
+| [SZL-Khipu-1.5B](https://huggingface.co/SZLHOLDINGS/SZL-Khipu-1.5B) | 1577 | +21 | +235 | — |
+| [SZL-Forge-1.5B-ReceiptAgent](https://huggingface.co/SZLHOLDINGS/SZL-Forge-1.5B-ReceiptAgent) | 2206 | +9 | +222 | — |
+| [SZL-Khipu-1.5B-GGUF](https://huggingface.co/SZLHOLDINGS/SZL-Khipu-1.5B-GGUF) | 864 | +7 | +280 | — |
 
-_Last snapshot: 2026-07-23 UTC · counters are HF-reported cumulative downloads; deltas DERIVED from consecutive daily snapshots._
+_Last snapshot: 2026-07-24 UTC · counters are HF-reported cumulative downloads; deltas DERIVED from consecutive daily snapshots._
